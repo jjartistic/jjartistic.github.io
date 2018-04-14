@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>  
+    <p id="demo"></p>
+
+
+    <script> 
+    var x = prompt("What is your first number?");
+    var y = prompt("What is your second number?");
+    console.log(x + y);
+
+    var length = prompt("What is the length for your rectangle?")
+    var width = prompt("What is the width for your rectangle?");
+
+    document.getElementById('demo').innerHTML="Area:"+ (length * width)
+    document.getElementById('demo').innerHTML="Perimeter:"+(2*(length) + 2*(width))
+    </script>
+   
+</body>
+</html>
