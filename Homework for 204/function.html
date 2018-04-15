@@ -7,15 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <pid="demo">Display the result here</p>
+    <p id="demo">Display the result here</p>
     <script>
     var person = {
-        fistName: "John",
-        lastName: "Doe",
-
-
+        firstName: "John",
+        lastName: "Doe",    
     };
-    document.getElementById('demo').innerHTML = "person";
+    document.getElementById('demo').innerHTML = person.firstName;
     </script>
+        
 </body>
 </html>
