@@ -12,17 +12,30 @@
     var lastName = "Jung";
     var myName = { firstName : "Jasmine", lastName: "Jung"};
     console.log(myName.lastName);
-    var myAddress = {number : 30 , street : "Brisbane Way", zip : 92612};
+    myAddress = {number : 30 , street : "Brisbane Way", zip : 92612};
     console.log(myAddress);
-    var myRect = (length : 5,width : 2);
+    myRect = (length : "5",width : "2")
     console.log(myRect.length);
     myCars = ["Honda", "Toyota"];
 
     for(var i = 0; i  < myCars.length; i ++){
         console.log(myCars[i])
     }
+    for(let i = 0; i < myCars.length; i ++){
+        const element = myCars[i];
+        console.log(myCars[i])
+    }
+    console.log( 1==1)
 
-    
+    var x = 10;
+    x += 5;
+    var z = x + x;
+
+    x = 5 + 5;
+    x = "5" + 5;
+    console.log(x);
+    x = "Hello" + 5;
+    console.log(x);
     </script>
 </body>
 </html>
