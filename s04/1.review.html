@@ -10,6 +10,8 @@
     <p id = "demo"></p>
 
     <button onclick="sayHello()"> Say Hello</button>
+    <button onclick="addOne()"> Add One</button>
+    <button onclick = "SubtractOne()">Subtract One</button>
 
     <script>
     document.getElementById('demo').innerHTML = "Paragraph Changed.";
@@ -17,9 +19,15 @@
         document.getElementById('demo').innerHTML = "Aloha";
     }
     
-    var count = 0;
+    var count = -1;
     function addOne() {
+        count ++;
         document.getElementById('demo').innerHTML = count;
+    }
+    var count2 = 101;
+    function SubtractOne(){
+        count2 --;
+        document.getElementById('demo').innerHTML = count2;
     }
     </script>
 </html>
