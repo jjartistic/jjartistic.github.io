@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Please enter a number</label> <br>
+    <input id="txtFirstNum" type="int"> <br>
+    <label for="">Please enter another number</label> <br>
+    <input id="txtSecondNum" type = "int"><br>
+    
+    <button id = 'btnTogether'>Answer</button>
+
+    <p id='demo'></p>
+    <script>
+        function Addition() {
+            var firstNum = document.querySelector("#txtFirstNum")
+            var secondNum = document.querySelector("#txtSecondNum")
+            var sum = parseInt(firstNum.value) + parseInt(secondNum.value)
+            document.querySelector('#demo').innerHTML = "The equation is " +  firstNum.value + " + " + secondNum.value + 
+            ". The answer is " + sum + ".";
+        };
+        var btnTogether = document.querySelector("#btnTogether");
+        btnTogether.addEventListener('click', Addition);
+    
+    </script>
+</body>
+</html>
