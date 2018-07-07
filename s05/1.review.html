@@ -21,12 +21,20 @@
 <body>
     <div class="container">
         <h1>Welcome!</h1>
+        <h1 id="display"></h1>
 
         <button class="btn btn-primary" onclick="alert('Hello')">Click Me</button>
+        <button class="btn btn-warning" onclick="showalert()">Alert</button>
+        <button class="btn btn-danger" onclick="showOnDisplay()">Message</button>
     </div>
 
     <script>
-    
+        function showalert(){
+            alert('Message')
+        }
+        function showOnDisplay(){
+            document.querySelector('#display').innerHTML = "Jasmine";
+        }
     </script>
 </body>
 </html>
