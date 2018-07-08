@@ -24,22 +24,12 @@
     <div class="container">
         <h1>Welcome!</h1>
         <h1 id="display">0</h1>
-        <button class="btn btn-primary" onclick="countUp()">Count Up</button>
-        <button class="btn btn-danger" onclick="countDown()">Count Down</button>
+        <button id="btnCountUp" class="btn btn-primary" >Count Up</button>
+        <button id="btnCountDown" class="btn btn-danger" >Count Down</button>
     </div>
 
-    <script>
-    var counter = 0;
+    <script src="2.count.js">
     
-
-    function countUp(){
-        counter += 1
-        document.querySelector('#display').innerHTML = counter;
-    }
-    function countDown(){
-        counter-= 1
-        document.querySelector('#display').innerHTML = counter;   
-    }
     </script>
 
 </body>
