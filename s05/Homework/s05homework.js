@@ -1,0 +1,41 @@
+var homework;
+(function (homework) {
+    var txtFirstName = document.querySelector('#txtFirstName');
+    var txtLastName = document.querySelector('#txtLastName');
+    var txtCode = document.querySelector('#txtCode');
+    var txtAddress = document.querySelector('#txtAddress');
+    var txtCity = document.querySelector('#txtCity');
+    var txtState = document.querySelector('#txtState');
+    var tblContact = document.querySelector('#tblContact');
+    var frmContact = document.querySelector('#frmContact');
+    frmContact.onsubmit = function () {
+        var firstName = txtFirstName.value;
+        var row = tblContact.insertRow();
+        var cell = row.insertCell();
+        cell.innerHTML = firstName;
+        txtFirstName.value = "";
+        var lastName = txtLastName.value;
+        cell = row.insertCell();
+        cell.innerHTML = lastName;
+        txtLastName.value = "";
+        var zipCode = txtCode.value;
+        cell = row.insertCell();
+        cell.innerHTML = zipCode;
+        txtCode.value = "";
+        var address = txtAddress.value;
+        cell = row.insertCell();
+        cell.innerHTML = address;
+        txtAddress.value = "";
+        var city = txtCity.value;
+        cell = row.insertCell();
+        cell.innerHTML = city;
+        txtCity.value = "";
+        var state = txtState.value;
+        cell = row.insertCell();
+        cell.innerHTML = state;
+        txtState.value = "";
+        txtFirstName.focus();
+        return false;
+    };
+})(homework || (homework = {}));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiczA1aG9tZXdvcmsuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJzMDVob21ld29yay50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxJQUFVLFFBQVEsQ0EwRGpCO0FBMURELFdBQVUsUUFBUTtJQUNkLElBQUksWUFBWSxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsZUFBZSxDQUFxQixDQUFDO0lBQy9FLElBQUksV0FBVyxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsY0FBYyxDQUFxQixDQUFDO0lBQzdFLElBQUksT0FBTyxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsVUFBVSxDQUFxQixDQUFDO0lBQ3JFLElBQUksVUFBVSxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsYUFBYSxDQUFxQixDQUFDO0lBQzNFLElBQUksT0FBTyxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsVUFBVSxDQUFxQixDQUFDO0lBQ3JFLElBQUksUUFBUSxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsV0FBVyxDQUFxQixDQUFDO0lBR3ZFLElBQUksVUFBVSxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsYUFBYSxDQUFxQixDQUFDO0lBRTNFLElBQUksVUFBVSxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsYUFBYSxDQUFvQixDQUFDO0lBRTFFLFVBQVUsQ0FBQyxRQUFRLEdBQUc7UUFDbEIsSUFBSSxTQUFTLEdBQUcsWUFBWSxDQUFDLEtBQUssQ0FBQztRQUNuQyxJQUFJLEdBQUcsR0FBRyxVQUFVLENBQUMsU0FBUyxFQUFFLENBQUM7UUFDakMsSUFBSSxJQUFJLEdBQUcsR0FBRyxDQUFDLFVBQVUsRUFBRSxDQUFDO1FBQzVCLElBQUksQ0FBQyxTQUFTLEdBQUcsU0FBUyxDQUFDO1FBQzNCLFlBQVksQ0FBQyxLQUFLLEdBQUcsRUFBRSxDQUFDO1FBRXhCLElBQUksUUFBUSxHQUFHLFdBQVcsQ0FBQyxLQUFLLENBQUM7UUFDakMsSUFBSSxHQUFHLEdBQUcsQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUN4QixJQUFJLENBQUMsU0FBUyxHQUFHLFFBQVEsQ0FBQztRQUMxQixXQUFXLENBQUMsS0FBSyxHQUFHLEVBQUUsQ0FBQztRQUl2QixJQUFJLE9BQU8sR0FBRyxPQUFPLENBQUMsS0FBSyxDQUFDO1FBQzVCLElBQUksR0FBRyxHQUFHLENBQUMsVUFBVSxFQUFFLENBQUM7UUFDeEIsSUFBSSxDQUFDLFNBQVMsR0FBRyxPQUFPLENBQUM7UUFDekIsT0FBTyxDQUFDLEtBQUssR0FBRyxFQUFFLENBQUM7UUFJbkIsSUFBSSxPQUFPLEdBQUcsVUFBVSxDQUFDLEtBQUssQ0FBQztRQUMvQixJQUFJLEdBQUcsR0FBRyxDQUFDLFVBQVUsRUFBRSxDQUFDO1FBQ3hCLElBQUksQ0FBQyxTQUFTLEdBQUcsT0FBTyxDQUFDO1FBQ3pCLFVBQVUsQ0FBQyxLQUFLLEdBQUcsRUFBRSxDQUFDO1FBSXRCLElBQUksSUFBSSxHQUFHLE9BQU8sQ0FBQyxLQUFLLENBQUM7UUFDekIsSUFBSSxHQUFHLEdBQUcsQ0FBQyxVQUFVLEVBQUUsQ0FBQztRQUN4QixJQUFJLENBQUMsU0FBUyxHQUFHLElBQUksQ0FBQztRQUN0QixPQUFPLENBQUMsS0FBSyxHQUFHLEVBQUUsQ0FBQztRQUduQixJQUFJLEtBQUssR0FBRyxRQUFRLENBQUMsS0FBSyxDQUFDO1FBQzNCLElBQUksR0FBRyxHQUFHLENBQUMsVUFBVSxFQUFFLENBQUM7UUFDeEIsSUFBSSxDQUFDLFNBQVMsR0FBRyxLQUFLLENBQUM7UUFDdkIsUUFBUSxDQUFDLEtBQUssR0FBRyxFQUFFLENBQUM7UUFFcEIsWUFBWSxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ3JCLE9BQU8sS0FBSyxDQUFBO0lBRWhCLENBQUMsQ0FBQTtBQUdMLENBQUMsRUExRFMsUUFBUSxLQUFSLFFBQVEsUUEwRGpCIn0=
